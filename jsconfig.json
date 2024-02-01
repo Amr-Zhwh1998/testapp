@@ -1,0 +1,33 @@
+{
+  "typeAcquisition": {"enable": false},
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2021",
+    "moduleResolution": "node",
+    "lib": ["ES2021","DOM"],
+   },
+  // these are just imports configuratoins
+  "include": [
+    "./**/*.js",
+    "./**/*.jsx"
+  ],
+  "baseUrl": ".",
+  "paths": {
+    "@src/*": [
+      "src/*"
+    ],
+    "@components/*": [
+      "src/components/*"
+    ],
+    "@screens/*": [
+      "src/components/screens/*"
+    ],
+    "@assets/*": [
+      "assets/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/node_modules/*"
+    ]
+  }
+}
